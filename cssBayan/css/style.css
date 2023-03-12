@@ -23,18 +23,59 @@ label
 label
 {
     width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+label span
+{
+    margin-left: 5%;
+}
+.wrapper
+{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
     background-color: rgb(184, 181, 181);
 
+}
+.header
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.symbols
+{
+    display: flex;
+    padding-right: 5%;
 }
 label:hover
 {
     background-color:cornflowerblue;
+    
+}
+label:hover img
+{
+    max-height: 100vh;
+}
+label:hover .cross 
+{
+    display: unset;
+}
+.plus
+{
+    display: none;
+    height: 100%;
+    font-size: 5em;
+}
+.cross
+{
+    display: none;
+    font-size: 2.5em;
+    vertical-align: middle;
+    padding-top: 14px;
 }
 input:checked ~ label img
 {
