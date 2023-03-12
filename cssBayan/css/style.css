@@ -1,6 +1,10 @@
+label
+{
+    cursor: pointer;
+}
 .content, .invisible
 {
-    display: none;
+    max-height: 0;
 }
 
 label
@@ -12,7 +16,11 @@ label
 }
 input:checked ~ label img
 {
-    display: unset;
+    max-height: 100vh;
+}
+img
+{
+    transition: 0.5s;
 }
 span
 {
