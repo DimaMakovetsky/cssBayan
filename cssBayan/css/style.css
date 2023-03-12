@@ -72,10 +72,9 @@ label:hover .cross
 }
 .cross
 {
+
     display: none;
     font-size: 2.5em;
-    vertical-align: middle;
-    padding-top: 14px;
 }
 input:checked ~ label img
 {
@@ -88,4 +87,28 @@ img
 span
 {
     font-size: 5vw;
+}
+
+
+@media only screen and (max-width:842px)
+{
+    label
+    {
+        width: 95%;
+    }
+    img
+    {
+        width: 95%;
+    }
+    span
+    {
+        font-size: 10vw;
+    }
+}
+@media only screen and (max-width:653px)
+{
+    .cross
+    {
+        font-size: 1.5em;
+    }
 }
